@@ -81,16 +81,19 @@ body{
     left : 0px;
     text-align: center;
     vertical-align: middle;
-    line-height: 50px;
+    line-height: 50px;    
+    position: absolute;
+    top:15px;
 }
 #afficheurDroit{
+    position: absolute;
     width:45%;
     min-height:150px;
     position: absolute;
     right : 0px;
     text-align: center;
     vertical-align: middle;
-    line-height: 80px;
+    line-height: 90px;
 }
 
 .taille{
@@ -116,7 +119,7 @@ body{
     -moz-border-radius:100px;
     -o-border-radius:100px;
     border-radius:100px;
-    margin-bottom: 5%;
+    margin-bottom: 5%;  
 }
 
 #ledDeux{
