@@ -14,7 +14,7 @@ function Led() {
                    
             this.refreshIntervalId = setInterval(function() {
             
-                ledUn.style.backgroundColor = "red";
+                ledUn.style.backgroundColor = "#7f8c8d";
                 setTimeout(function(){ledUn.style.backgroundColor = "#FFFFFF"}, 144);
 
             }, frequence);
@@ -33,7 +33,7 @@ function Led() {
 
             this.refreshIntervalId2 = setInterval(function() {
             
-                ledDeux.style.backgroundColor = "blue";
+                ledDeux.style.backgroundColor = "#34495e";
                 setTimeout(function(){ledDeux.style.backgroundColor = "#FFFFFF"}, 144);
                 
             }, frequence);

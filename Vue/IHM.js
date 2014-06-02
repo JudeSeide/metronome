@@ -17,7 +17,7 @@ function IHM() {
 
         var son = HautParleur.getInstance();
         son.sonner(f_un);
-    }
+    };
 
     this.updateMesure = function() {
         var horloge = Horloge.getInstance();
@@ -29,7 +29,7 @@ function IHM() {
         var mesure = metronome.getMesure();
         var ecran = Ecran.getInstance();
         ecran.afficherMesure(mesure);
-    }
+    };
 
     this.updateStart = function() {
         var metronome = Metronome.getInstance();
@@ -62,7 +62,7 @@ function IHM() {
             son.reglerVolume(volume);
         }
 
-    }
+    };
 
     this.updateVolume = function() {
         var metronome = Metronome.getInstance();
@@ -82,7 +82,7 @@ function IHM() {
         } else if (lang === "fr") {
             $('#mesure').html("Mesure");
         }
-    }
+    };
 
     this.charger = function() {
 
@@ -126,13 +126,12 @@ function IHM() {
                         }
                         else {
                             volume.css('background-position', '0 -75px');
-                        }
-                        ;
+                        };
 
                     },
                     stop: function(event, ui) {
                         tooltip.fadeOut('fast');
-                    },
+                    }
                 });
 
             });
@@ -180,7 +179,7 @@ function IHM() {
                     },
                     stop: function(event, ui) {
                         tooltip.fadeOut('fast');
-                    },
+                    }
                 });
 
             });

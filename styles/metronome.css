@@ -90,36 +90,43 @@ body{
     right : 0px;
     text-align: center;
     vertical-align: middle;
-    line-height: 50px;
+    line-height: 80px;
 }
 
 .taille{
     font-size: 5em;
 }
 
-#ledUn{
-    width:30px;
-    height:20px;
-    background:#FFFFFF;
-    -webkit-border-radius:100px;
-    -moz-border-radius:100px;
-    -o-border-radius:100px;
-    border-radius:100px;
-    left: 260px;
-    top : 35px;
+#leds{    
+    float:right;
+    width:40%;
+    padding:0;
+    margin:0;
+    left: 48%;
+    display: block;
+    list-style-type:none;
     position: absolute;
 }
-#ledDeux{
+
+#ledUn{
     width:30px;
-    height:20px;
+    height:30px;
     background:#FFFFFF;
     -webkit-border-radius:100px;
     -moz-border-radius:100px;
     -o-border-radius:100px;
     border-radius:100px;
-    left: 210px;
-    top : 55px;
-    position: absolute;
+    margin-bottom: 5%;
+}
+
+#ledDeux{
+    width:30px;
+    height:30px;
+    background:#FFFFFF;
+    -webkit-border-radius:100px;
+    -moz-border-radius:100px;
+    -o-border-radius:100px;
+    border-radius:100px;
 }
 
 #sliders{
