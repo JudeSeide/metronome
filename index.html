@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Metronome</title>
+
+        <link type="text/css" rel="stylesheet" href="styles/metronome.css"></link>
+        <link type="text/css" rel="stylesheet" href="styles/volume.css"></link>
+
+        <script type="text/javascript" src="jquery-ui-1.10.3/jquery-1.9.1.js"></script>
+        <script type="text/javascript" src="jquery-ui-1.10.3/ui/minified/jquery-ui.min.js"></script>
+
+        <script type="text/javascript" src="Vue/IHM.js"></script>
+        <script type="text/javascript" src="Modele/Metronome.js"></script>
+        <script type="text/javascript" src="Modele/Horloge.js"></script>
+        <script type="text/javascript" src="Modele/Sujet.js"></script>
+        <script type="text/javascript" src="Controlleur/Observeur.js"></script>
+        <script type="text/javascript" src="Vue/Ecran.js"></script>
+        <script type="text/javascript" src="Vue/Led.js"></script>
+        <script type="text/javascript" src="Vue/HautParleur.js"></script>
+
+        <script type="text/javascript" src="Controlleur/Commande.js"></script>
+        <script type="text/javascript" src="Controlleur/CommandeDec.js"></script>
+        <script type="text/javascript" src="Controlleur/CommandeInc.js"></script>
+        <script type="text/javascript" src="Controlleur/CommandeMoletteTempo.js"></script>
+        <script type="text/javascript" src="Controlleur/CommandeVolume.js"></script>
+        <script type="text/javascript" src="Controlleur/CommandeStart.js"></script>        
+        <script type="text/javascript" src="Controlleur/CommandeStop.js"></script>
+        <script type="text/javascript" src="Controlleur/CommandeLang.js"></script>
+        
+        <script type="text/javascript" src="DAO/MetronomeDAO.js"></script>
+        <script type="text/javascript" src="DAO/MetronomeDAOImpl.js"></script>
+
+        <script type="text/javascript">
+            var leMetronome = Metronome.getInstance();
+            var ihm = IHM.getInstance();
+            leMetronome.attach(ihm);
+        </script>
+    </head>
+    <body>
+
+        <div class="metronome">
+            <div id="reglageTempo"></div>
+
+            <div id="reglageVolume">
+                <section>	
+                    <span class="tooltip"></span>  
+                    <div class="slider"></div> 
+                    <span class="volume"></span> 
+                </section>
+            </div>
+            <div id="languefr"></div>
+            <div id="langueen"></div>
+
+            <div id="speaker"></div>
+
+            <div id="start">Start</div>
+            <div id="stop">Stop</div>
+
+            <div id="ledUn"></div>
+            <div id="ledDeux"></div>
+
+            <div id="mesureHaut">/\</div>
+            <div id="mesureBas">\/</div>
+
+            <div id="contourAfficheurBlanc">
+                <div id="contourAfficheurNoir"></div>
+                <div id="afficheur">
+                    <div id="afficheurGauche">Tempo<br/><div id="getReglageTempo"></div><br/></div>
+                    <div id="afficheurDroit">
+                     <div id="mesure">Measure</div>
+                     <div id="getReglageMesure"></div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <audio id="sons">
+
+            </audio>
+        </div>
+
+
+    </body>
+</html>

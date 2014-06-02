@@ -1,0 +1,226 @@
+.metronome {
+          width: 800px;
+          height: 320px;
+          background: #1b2a2d;
+          border-top-left-radius: 150px 100px;
+          border-top-right-radius: 150px 100px;
+          border-bottom-right-radius: 150px 100px;
+          border-bottom-left-radius: 150px 100px;
+          position: relative;
+      }
+      #start{
+            width:50px;
+            height:50px;
+            background:#069;
+            color : #FFFFFF;
+            -webkit-border-radius:100px;
+            -moz-border-radius:100px;
+            -o-border-radius:100px;
+            border-radius:100px;
+            right: 180px;
+            top : 75px;
+            position: absolute;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 50px;
+            cursor:pointer;
+      }
+      #stop{
+              width:50px;
+              height:50px;
+              background:#069;
+              color : #FFFFFF;
+              -webkit-border-radius:100px;
+              -moz-border-radius:100px;
+              -o-border-radius:100px;
+              border-radius:100px;
+              right : 100px;
+              top : 75px;
+              position: absolute;
+              text-align: center;
+             vertical-align: middle;
+             line-height: 50px;
+             cursor:pointer;
+      }
+      #mesureHaut{
+              width:50px;
+              height:50px;
+              background:#069;
+              -webkit-border-radius:100px;
+              -moz-border-radius:100px;
+              -o-border-radius:100px;
+              border-radius:100px;
+              right: 140px;
+              top : 140px;
+              position: absolute;
+              display:inline;
+              cursor:pointer;
+              text-align: center;
+              vertical-align: middle;
+              line-height: 50px;
+      }
+      #mesureBas{
+              width:50px;
+              height:50px;
+              background:#069;
+              -webkit-border-radius:100px;
+              -moz-border-radius:100px;
+              -o-border-radius:100px;
+              border-radius:100px;
+              right: 140px;
+              top : 200px;
+              position: absolute;
+              display:inline;
+              cursor:pointer;
+              text-align: center;
+              vertical-align: middle;
+              line-height: 50px;
+      }
+      #contourAfficheurBlanc{
+              width:300px;
+              height:200px;
+              background: #ccc;
+              -webkit-border-radius:150px / 100px;
+              -moz-border-radius:150px / 100px;
+              -o-border-radius:150px / 100px;
+              border-radius:150px / 100px;
+              position: relative;
+              left: 200px;
+              top : 50px;
+      }
+      #contourAfficheurNoir{
+              width:280px;
+              height:180px;
+              background:#000000;
+              -webkit-border-radius:150px / 100px;
+              -moz-border-radius:150px / 100px;
+              -o-border-radius:150px / 100px;
+              border-radius:150px / 100px;
+              position: absolute;
+              margin : 10px;
+      }
+      #afficheur{
+          width:200px;
+          height:100px;
+          background:gray;
+          -webkit-border-radius:100px / 100px;
+          -moz-border-radius:100px / 100px;
+          -o-border-radius:100px / 100px;
+          border-radius:100px / 100px;
+          left: 50px;
+          top : 50px;
+          position: absolute;
+          /*background-image: url("../images/screen.png");*/
+          background-size: contain;
+          
+      }
+      
+      #afficheurGauche{
+          width:90px;
+          height:100px;
+          /*background-color: yellow;*/
+          position: absolute;
+          left : 0px;
+          text-align: center;
+          vertical-align: middle;
+          line-height: 50px;
+      }
+      #afficheurDroit{
+          width:90px;
+          height:100px;
+          /*background-color: red;*/
+          position: absolute;
+          right : 0px;
+          text-align: center;
+          vertical-align: middle;
+          line-height: 50px;
+      }
+
+      #ledUn{
+          width:30px;
+          height:20px;
+          background:#FFFFFF;
+          -webkit-border-radius:100px;
+          -moz-border-radius:100px;
+          -o-border-radius:100px;
+          border-radius:100px;
+          left: 260px;
+          top : 35px;
+          position: absolute;
+      }
+      #ledDeux{
+          width:30px;
+          height:20px;
+          background:#FFFFFF;
+          -webkit-border-radius:100px;
+          -moz-border-radius:100px;
+          -o-border-radius:100px;
+          border-radius:100px;
+          left: 210px;
+          top : 55px;
+          position: absolute;
+      }
+      #languefr{
+          width:50px;
+          height:36px;
+          background:#069;
+          left: 130px;
+          top : 45px;
+          position: absolute;
+          background-image: url("../images/languefr.png");
+          background-size: contain;
+          cursor:pointer;
+      }
+      #langueen{
+          width:50px;
+          height:36px;
+          background:#069;
+          left: 80px;
+          top : 45px;
+          position: absolute;
+          background-image: url("../images/langueen.png");
+          background-size: contain;
+          cursor:pointer;
+      }
+      #speaker{
+          width:128px;
+          height:128px;
+          /*background:yellow;*/
+          -webkit-border-radius:150px / 100px;
+          -moz-border-radius:150px / 100px;
+          -o-border-radius:150px / 100px;
+          border-radius:150px / 100px;
+          position: absolute;
+          left: 60px;
+          top : 110px;
+          background-image: url("../images/speaker-with-grill.png");
+          background-size: contain;
+      }
+      #reglageTempo{
+          width:350px;
+          height:10px;
+          background:yellow;
+          position: absolute;
+          left: 260px;
+          bottom: 10px;
+      }
+      #reglageVolume{
+          width:120px;
+          height:10px;
+          /*background:yellow;*/
+          position: absolute;
+          left: 100px;
+          bottom: 10px;
+      }
+      
+      #getReglageMesure{
+          display:inline;
+      }
+      
+      #getReglageTempo{
+          display:inline;
+      }
+      
+      #getSpeakerValue{
+          display:inline;
+      }
