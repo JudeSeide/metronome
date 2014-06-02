@@ -5,6 +5,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Metronome</title>
 
+        <link rel="stylesheet" href="font-awesome-4.1.0/css/font-awesome.min.css"></link>
         <link type="text/css" rel="stylesheet" href="styles/metronome.css"></link>
         <link type="text/css" rel="stylesheet" href="styles/volume.css"></link>
 
@@ -28,7 +29,7 @@
         <script type="text/javascript" src="Controlleur/CommandeStart.js"></script>        
         <script type="text/javascript" src="Controlleur/CommandeStop.js"></script>
         <script type="text/javascript" src="Controlleur/CommandeLang.js"></script>
-        
+
         <script type="text/javascript" src="DAO/MetronomeDAO.js"></script>
         <script type="text/javascript" src="DAO/MetronomeDAOImpl.js"></script>
 
@@ -40,45 +41,56 @@
     </head>
     <body>
 
-        <div class="metronome">
-            <div id="reglageTempo"></div>
+        <div id="metronome">
+            <div id="sliders">Tempo
+                <div id="reglageTempo">
+                    <section>
+                        <span id="tempoTooltip" class="tooltip"></span>  
+                        <div id="tempoSlider" class="slider"></div> 
+                    </section>
+                </div>
 
-            <div id="reglageVolume">
-                <section>	
-                    <span class="tooltip"></span>  
-                    <div class="slider"></div> 
-                    <span class="volume"></span> 
-                </section>
+                <div id="reglageVolume"> 
+                    Volume
+                    <section>
+                        <span id="volumeTooltip" class="tooltip"></span>  
+                        <div id="volumeSlider" class="slider"></div> 
+                    </section>
+                </div>
             </div>
-            <div id="languefr"></div>
-            <div id="langueen"></div>
 
-            <div id="speaker"></div>
 
-            <div id="start">Start</div>
-            <div id="stop">Stop</div>
+
+            <div id="afficheur">
+                <div id="afficheurGauche">
+                    <h1>Tempo</h1>
+                    <br/>
+                    <div class="taille" id="getReglageTempo"></div>
+                    <br/>
+                </div>
+                <div id="afficheurDroit">
+                    <div id="mesure">
+                        <h1>Measure</h1>                            
+                    </div>
+                    <div class="taille" id="getReglageMesure"></div>
+                </div>
+            </div>
 
             <div id="ledUn"></div>
             <div id="ledDeux"></div>
 
-            <div id="mesureHaut">/\</div>
-            <div id="mesureBas">\/</div>
+            <ul id="buttons">
+                <li id="languefr" class="button"><i class="fa fa-language fa-lg"></i>fr</li>
+                <li id="langueen" class="button"><i class="fa fa-language fa-lg"></i>en</li>
 
-            <div id="contourAfficheurBlanc">
-                <div id="contourAfficheurNoir"></div>
-                <div id="afficheur">
-                    <div id="afficheurGauche">Tempo<br/><div id="getReglageTempo"></div><br/></div>
-                    <div id="afficheurDroit">
-                     <div id="mesure">Measure</div>
-                     <div id="getReglageMesure"></div>
-                        
-                    </div>
-                </div>
-            </div>
+                <li id="start" class="button"><i class="fa fa-play fa-lg"></i></li>
+                <li id="stop" class="button"><i class="fa fa-stop fa-lg"></i></li>
 
-            <audio id="sons">
+                <li id="mesureHaut" class="button"><i class="fa fa-caret-up fa-2x"></i></li>
+                <li id="mesureBas" class="button"><i class="fa fa-caret-down fa-2x"></i></li>
+            </ul>
 
-            </audio>
+            <audio id="sons"></audio>
         </div>
 
 
