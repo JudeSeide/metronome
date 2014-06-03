@@ -20,7 +20,7 @@ Le métronome possède les caractéristiques suivantes :
 -Un haut-parleur émettant un clic sonore à chaque temps.
 -Un gestionnaire de langue (français ou anglais)
 
-Le led rouge est le led #1
+Le led gris est le led #1
 Le led bleu est le led #2
 
 Le DAO utilisé pour le metronome sauvegarde les données dans un format JSON
